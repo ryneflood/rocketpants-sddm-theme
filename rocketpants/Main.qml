@@ -25,7 +25,7 @@
 import QtQuick 2.11
 import QtQuick.Layouts 1.11
 import QtQuick.Controls 2.4
-import QtGraphicalEffects 1.0
+//import QtGraphicalEffects 1.0
 import "Components"
 
 Pane {
@@ -258,17 +258,17 @@ Pane {
             visible: config.FullBlur == "true" || config.PartialBlur == "true" ? true : false
         }
 
-        GaussianBlur {
-            id: blur
+        //GaussianBlur {
+        //    id: blur
 
-            height: parent.height
-            width: config.FullBlur == "true" ? parent.width : form.width
-            source: config.FullBlur == "true" ? backgroundImage : blurMask
-            radius: config.BlurRadius
-            samples: config.BlurRadius * 2 + 1
-            cached: true
-            anchors.centerIn: config.FullBlur == "true" ? parent : form
-            visible: config.FullBlur == "true" || config.PartialBlur == "true" ? true : false
-        }
+        //    height: parent.height
+        //    width: config.FullBlur == "true" ? parent.width : form.width
+        //    source: config.FullBlur == "true" ? backgroundImage : blurMask
+        //    radius: config.BlurRadius
+        //    samples: config.BlurRadius * 2 + 1
+        //    cached: true
+        //    anchors.centerIn: config.FullBlur == "true" ? parent : form
+        //    visible: config.FullBlur == "true" || config.PartialBlur == "true" ? true : false
+        //}
     }
 }
