@@ -25,7 +25,6 @@
 import QtQuick 2.11
 import QtQuick.Layouts 1.11
 import QtQuick.Controls 2.4
-//import QtGraphicalEffects 1.0
 import "Components"
 
 Pane {
@@ -99,7 +98,7 @@ Pane {
             id: form
 
             height: virtualKeyboard.state == "visible" ? parent.height - virtualKeyboard.implicitHeight : parent.height
-            width: parent.width / 2.5
+            width: parent.width / 2.0
             anchors.horizontalCenter: config.FormPosition == "center" ? parent.horizontalCenter : undefined
             anchors.left: config.FormPosition == "left" ? parent.left : undefined
             anchors.right: config.FormPosition == "right" ? parent.right : undefined
